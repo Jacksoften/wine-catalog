@@ -28,15 +28,28 @@ newplot = function(x, resetplot=TRUE, color='black', confidence = 0) {
 }
 
 library(ggplot2)
-wordplot = function(x, confidence=0, size = 3){
+wordplot = function(x, conf=FALSE, size = 3){
 
 	# this function uses ggplot2 package to build a plot which
 	# displays grasped words from the picture
 	if(!is.data.frame(x)) stop("Input is not a data frame")
 
-	plt = ggplot(x) + geom_text(aes(x = (left + right) / 2,
-									y = 6000 - (top + bottom) / 2,
-									label = text), size = size)
+	plt = ggplot(x, aes(x = (left + right)/2,
+				        y = 6000 - (top + bottom)/2))
+
+	if(conf){
+		# # set different sizes for confidence
+		# plt = plt + geom_text(aes(label = text, size=confidence)) +
+		#           scale_size_area(max_size=size)
+		
+		# set different color for confidence (this works better than different sizes)
+		plt = plt +
+			  geom_text(aes(label = text, color = confidence), size=size) +
+			  scale_color_gradient2(high='#000000') # '#000000' represents black
+	}
+	else{
+		plt = plt + geom_text(aes(label = text), size = size)
+	}
 	plt
 }
 
