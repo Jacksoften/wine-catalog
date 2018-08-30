@@ -1,0 +1,72 @@
+# NOTE
+I have checked all files and plotted their boxes data.
+OCR could get most useful data
+
+all files with big lower number and small upper number
+```
+0208
+
+cannot find anything
+```
+
+```
+0628
+
+could find 165 and 00, $ as s
+```
+
+```
+0629
+
+'$' detected as 'S'
+'46' detected as 'A6'
+```
+
+```
+0946
+
+```
+
+```
+0985
+
+lower'38'upper'75' as '3875'
+lower'16'upper'50' as '1R50'
+```
+
+```
+1048
+
+'Only $28 68' could not be detected 
+```
+
+1353
+
+```
+1721
+
+# this file is very interesting, there are blocks of texts and 
+# they have different angles. it is going to be fun if we can 
+# rotate them back and put them back to blocks.
+
+# hough algorithm might be helpful for finding alignes lines
+```
+1983
+2504
+2531
+2535
+2601
+2654
+2692
+2694
+2759
+3001
+3387
+3875
+
+
+# THINKING
+# there are some wine menus with texts in certain blocks
+# we might be able to recover the menu structure
+
+
