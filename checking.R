@@ -48,5 +48,5 @@ lapply(ocrdata,
 data0208 = ocrdata$UCD_Lehmann_0208.jpg
 
 # newplot(data0208)
-wordplot(data0208)
+wordplot(data0208, conf = TRUE)
 showpdf(0208)
