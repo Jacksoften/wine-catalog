@@ -28,7 +28,7 @@ newplot = function(x, resetplot=TRUE, color='black', confidence = 0) {
 }
 
 library(ggplot2)
-wordplot = function(x, conf=FALSE, size = 3){
+wordplot = function(x, conf=TRUE, size = 2){
 
 	# this function uses ggplot2 package to build a plot which
 	# displays grasped words from the picture
