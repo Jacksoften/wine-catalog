@@ -1,5 +1,9 @@
-# LIST OF ALL PDFs IN THE FIRST SAMPLE WITH A PATTERN OF BIG NUMBER AND SMALL NUMBER ON THE UP-RIGHT CORNER. 
-* all filenames are in the form of UCD_Lehmann_0000.jpg
+# First Exploration
+* LIST OF ALL PDFs IN THE FIRST SAMPLE WITH A PATTERN OF BIG NUMBER AND SMALL NUMBER ON THE UP-RIGHT CORNER. 
+
+* All filenames are in the form of UCD_Lehmann_0000.jpg
+
+* I used ggplot2 package to recover the words and numbers according to their position. 
 
 ## 0208
 Nothing
@@ -12,12 +16,12 @@ $165.00 as 's' '165' '00'
 's' and '00' are a little bit higher than '165' but they have the same size.
 
 ## 0629
-Only $46.98 as 'Only', 'S', 'A6', '>>98'
+Only $46.98 >> Only S A6 >>98
 
 note: 0628 and 0629 have the very similar format, horizontal layout and only black and white color.
 
 ## 0946
-$1.79 >> (nothing)
+$1.79 >> (nothing) <br>
 $19.95 >> 95
 
 note: left bottom corner, and the price is twice larger than the surrounding words.
@@ -65,3 +69,29 @@ $37.50 >> $3 7 50 <br>
 
 note: prices are on the top left corner. This picture has only black and white color. It might be the reason why there are more correct numbers.
 
+## 2504
+$29.75 >> nothing <br> 
+$35.95 >> =93 <br>
+$25.75 >> nothing <br>
+$36.50 >> e>0 <br>
+
+note: '$' is smaller than first two numbers. Those prices are surrounded by other words and larger than the surrounding words. 
+
+## 2531
+$3.99 >> %©& <br>
+$46.75 >> & 7 <br>
+$5.99 >> nothing <br>
+$68.50 >> % 5 <br>
+
+note: target prices are surrounded by image patterns. 
+
+## 2535
+$4.79 >> 8g 4 9
+
+note: this file has only black and white color. 
+
+## 2601
+
+
+##NOTES:
+it might be better if we can show the actural size of the words in the plot.

@@ -35,7 +35,9 @@ wordplot = function(x, conf=TRUE, size = 2){
 	if(!is.data.frame(x)) stop("Input is not a data frame")
 
 	plt = ggplot(x, aes(x = (left + right)/2,
-				        y = 6000 - (top + bottom)/2))
+				        y = 6000 - (top + bottom)/2)) +
+			  ggtitle(sprintf('%s', deparse(substitute(x))))
+		  ## deparse(substitute(x)) convert variable name to a string
 
 	if(conf){
 		# # set different sizes for confidence
@@ -45,10 +47,13 @@ wordplot = function(x, conf=TRUE, size = 2){
 		# set different color for confidence (this works better than different sizes)
 		plt = plt +
 			  geom_text(aes(label = text, color = confidence), size=size) +
-			  scale_color_gradient2(high='#000000') # '#000000' represents black
+			  scale_color_gradient2(high='#000000') +  # '#000000' represents black
+			  geom_rect(aes(xmin=left, xmax=right, ymin=6000-bottom, ymax=6000-top), color='red', alpha=0, size=0.1)
+
 	}
 	else{
-		plt = plt + geom_text(aes(label = text), size = size)
+		plt = plt + geom_text(aes(label = text), size = size) +
+					geom_rect(aes(xmin=left, xmax=right, ymin=6000-bottom, ymax=6000-top), color='red', alpha=0, size=0.1)
 	}
 	plt
 }
