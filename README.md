@@ -3,7 +3,7 @@
 
 * All filenames are in the form of UCD_Lehmann_0000.jpg
 
-* I used ggplot2 package to recover the words and numbers according to their position. 
+* I used ggplot2 package to recover the words and numbers according to their position. *one example is put in ./notes*
 
 ## 0208
 Nothing
@@ -91,6 +91,25 @@ $4.79 >> 8g 4 9
 note: this file has only black and white color. 
 
 ## 2601
+$1.59 >> nothing <br>
+$17.95 >> $ 95 <br>
+$3.79 >> nothing <br>
+$42.75 >> 3 75 <br>
+$1.50 >> nothing <br>
+$16.20 >> q 20 <br>
+$3.99 >> G9 <br>
+$46.75 >> $4675 <br>
+$4.99 >> 99 <br>
+$56.50 >> $56˚0 <br>
+$8.66 >> 86 <br>
+$93.49 >> $9349 <br>
+$6.24 >> 5624 <br>
+$71.17 >> ST1| <br>
+$6.25 >> $65 <br> 
+$71.25 >> $7125 <br>
+$8.20 >> $820 <br>
+$93.48 >> $9348 <br>
+
 
 
 ##NOTES:

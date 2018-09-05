@@ -48,12 +48,20 @@ wordplot = function(x, conf=TRUE, size = 2){
 		plt = plt +
 			  geom_text(aes(label = text, color = confidence), size=size) +
 			  scale_color_gradient2(high='#000000') +  # '#000000' represents black
-			  geom_rect(aes(xmin=left, xmax=right, ymin=6000-bottom, ymax=6000-top), color='red', alpha=0, size=0.1)
+			  geom_rect(aes(xmin=left, 
+							xmax=right, 
+							ymin=6000-bottom, 
+							ymax=6000-top), 
+						color='red', alpha=0, size=0.1)
 
 	}
 	else{
 		plt = plt + geom_text(aes(label = text), size = size) +
-					geom_rect(aes(xmin=left, xmax=right, ymin=6000-bottom, ymax=6000-top), color='red', alpha=0, size=0.1)
+					geom_rect(aes(xmin=left, 
+								  xmax=right, 
+								  ymin=6000-bottom, 
+								  ymax=6000-top), 
+							  color='red', alpha=0, size=0.1)
 	}
 	plt
 }
