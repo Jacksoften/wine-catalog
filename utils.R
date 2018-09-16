@@ -36,7 +36,8 @@ wordplot = function(x, conf=TRUE, size = 2){
 
 	plt = ggplot(x, aes(x = (left + right)/2,
 				        y = 6000 - (top + bottom)/2)) +
-			  ggtitle(sprintf('%s', deparse(substitute(x))))
+			  ggtitle(sprintf('%s', deparse(substitute(x)))) +
+			  labs(x=NULL,y=NULL)
 		  ## deparse(substitute(x)) convert variable name to a string
 
 	if(conf){

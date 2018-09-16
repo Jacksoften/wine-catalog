@@ -1,9 +1,9 @@
-# First Exploration
+# First Exploration 
 * LIST OF ALL PDFs IN THE FIRST SAMPLE WITH A PATTERN OF BIG NUMBER AND SMALL NUMBER ON THE UP-RIGHT CORNER. 
 
 * All filenames are in the form of UCD_Lehmann_0000.jpg
 
-* I used ggplot2 package to recover the words and numbers according to their position. *one example is put in ./notes*
+* I represented words and numbers according to their position for the convinience of viewing if words are correcly catched by pdf parser engine. *one example is put in ./notes*
 
 ## 0208
 Nothing
@@ -110,6 +110,9 @@ $71.25 >> $7125 <br>
 $8.20 >> $820 <br>
 $93.48 >> $9348 <br>
 
+note: there are 9 pairs of prices in the menu, the one on the top of each pair could not be obtained correcly. 
+
+## 2654
 
 
 ##NOTES:
