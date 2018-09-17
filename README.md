@@ -113,6 +113,30 @@ $93.48 >> $9348 <br>
 note: there are 9 pairs of prices in the menu, the one on the top of each pair could not be obtained correcly. 
 
 ## 2654
+$5.99 >> $ <br>
+$68.50 >> nothing <br>
+
+note: font style might influence the result of teserrect. 
+
+## 2692
+$1.49 >> 49 <br>
+$16.50 >> $16˚˚ <br>
+$1.69 >> % 69 <br>
+$18.50 >> $ 18 5 0 <br>
+$1.59 >> nothing <br>
+$17.95 >> 1 7 95 <br>
+
+note: when there is a single 1, it is always very thick. 
+
+## 2694
+$1.79 >> nothing <br>
+$19.95 >> $7095 <br>
+$1.99 >> &$0 <br>
+$22.50 >> $ 50 <br> 
+$2.19 >> \*2 19 <br>
+$24.50 >> 5 50 <br>
+
+note: 
 
 
 ##NOTES:
