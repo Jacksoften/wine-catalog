@@ -136,8 +136,23 @@ $22.50 >> $ 50 <br>
 $2.19 >> \*2 19 <br>
 $24.50 >> 5 50 <br>
 
-note: 
+note: it has very low possibility to catch 1's in the file.
 
+## 2759 
+$10.95 >> @PRU <br>
+$30.75 >> $30 "5 <br>
+
+## 3001
+$2.29 >> £929 <br>
+
+note: orange background
+
+## 3387 
+$2.69 >> 3 ous 68
+note: pink background
+
+## 3875
+note: tesserect only gets few words from top-right corner and leaves blank for everywhere else.
 
 ##NOTES:
 it might be better if we can show the actural size of the words in the plot.
